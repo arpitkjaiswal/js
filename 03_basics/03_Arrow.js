@@ -36,7 +36,7 @@ user.welcomeMessage(); // Welcome, Zoro!
 // tea(); // undefined! (because this refers to the global object, which does not have a username property)
 
 
-
+// () => {}
 const addTwo = (num1, num2) => {
     return num1 + num2;
 }
