@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <div class="day">MONDAY</div>
+        <div class="day">TUESDAY</div>
+        <div class="day">WEDNESDAY</div>
+        <div class="day">THURSDAY</div>
+        <div class="day">FRIDAY</div>
+
+    </div>
+    
+</body>
+<script>
+     const parent = document.querySelector('.parent');
+    console.log(parent.children);
+    console.log(parent.children[0].innerHTML);
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+    }
+    parent.children[0].style.color="red";
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    console.log(parent.firstElementChild.innerHTML);
+    console.log(parent.lastElementChild.innerHTML);
+
+    const dayOne=document.querySelector('.day') // this will select the first element with class day
+    console.log(dayOne.innerHTML);
+    console.log(dayOne.parentElement.innerHTML);
+    console.log(dayOne.nextElementSibling.innerHTML);
+
+    console.log("NODES: ", parent.childNodes);
+
+</script>
+</html>
