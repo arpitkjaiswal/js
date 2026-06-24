@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning NEW 2</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(languageName){
+        const li = document.createElement('li');
+         li.innerHTML = `${languageName}`;
+        const ul = document.querySelector('.language');
+        
+       
+        ul.appendChild(li);// appendChild() method adds the new element as the last child of the parent element.
+        
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+    addLanguage("TypeScript");
+    
+    function optiLanguage(languageName){
+        const li = document.createElement('li');
+         li.innerHTML = `${languageName}`;
+        const ul = document.querySelector('.language');
+        
+       
+        ul.prepend(li); // prepend() method adds the new element as the first child of the parent element.
+        
+    }
+    optiLanguage("C++");
+    optiLanguage("React");
+    optiLanguage("Node.js");
+    optiLanguage("Angular");
+    optiLanguage("Vue.js");
+    optiLanguage("Django");
+
+    //Edit
+    const secondLi = document.querySelector('.language li:nth-child(2)'); // Select the second list item and 
+    // store it in a variable
+
+    secondLi.innerHTML = "Ruby"; // Edit the content of the second list item  ]
+
+
+    //Delete
+    const lastLi = document.querySelector('.language li:last-child'); // Select the last list item and store it in a variable
+    lastLi.remove(); // Remove the last list item from the list
+
+    const anyLI = document.querySelector('.language li:nth-child(3)'); // Select the third list item and store it in a variable
+    anyLI.remove(); // Remove the third list item from the list
+
+
+
+</script>
+</html>
