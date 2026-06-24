@@ -49,3 +49,4 @@ console.log(addTwoShort(5, 6)); // 11
 
 const addTwoShorter = (num1, num2) => (num1 +num2);
 console.log(addTwoShorter(7, 8)); // 15
+

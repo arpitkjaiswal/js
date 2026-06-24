@@ -32,3 +32,5 @@ console.log(arr.slice(1, 4));
 arr.splice(1, 2);
 
 console.log(arr);
+
+
