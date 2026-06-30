@@ -95,7 +95,7 @@ getAllUsers();
 
 
 
-fetch('https://jsonplaceholder.typicode.com/users')
+fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
     return response.json();
 })
